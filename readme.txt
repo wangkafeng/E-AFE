@@ -4,4 +4,4 @@ python Main_weka_minhash.py
 python Main_sklearn_minhash.py
 
 The source code refers to the implementation of NFS （Neural feature search: A neural architecture for automated feature engineering).
-MinHash function library comes from: A review for weighted minhash algorithms.
+MinHash function library refers to the implementation of Wei Wu's MinHash libray (A review for weighted minhash algorithms).
