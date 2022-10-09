@@ -69,6 +69,9 @@ parser.add_argument('--dimension_pcws', type=int,
 	default=52, help='pcws output length for feature vector. 32: 0.63, 48: 0.709, 52: 0.709 , 56: 0.63,  64:0.665  128: 0.7339  256: ')
 parser.add_argument('--feature_extract_alg', nargs='?',
 	default='CCWS', help='meta feature extract algorithm, such as minhash algorithm PCWS, statistic. CCWS 0.01 48 0.729, CCWS 0.01 52 0.90 ')
+
+parser.add_argument('--init_rl', type=boolean_string,  # kafeng add
+	default=True, help='whether get reward using multiprocess True or False')
 args = parser.parse_args()
 print('args = ', args)
 #origin_result = None     # kafeng define global 
